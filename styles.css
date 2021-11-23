@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  background-color: #fcf8e8;
+}
+a:link,
+a:visited {
+  color: #30475e;
+  stroke: blueviolet;
+  text-decoration: none;
+  line-height: 1.2rem;
+}
+
+a:hover {
+  color: #df7861;
+  /* transform: scale(1.2);  */
+  font-size: 1.05rem;
+}
+
+a:active {
+  color: #b85c38;
+  size: 1.1em;
+  text-decoration: overline;
+}
+
+/* Classes */
+
+.menu {
+  position: fixed;
+  margin: 0;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  background-color: #ecb390;
+  color: #b85c38;
+  border: 3px solid red;
+}
+.dots {
+  width: 20%;
+  border-width: 1rem;
+  border-style: dotted none none none;
+  border-color: #d4e2d4;
+}
+.body {
+  margin-top: 50px;
+}
