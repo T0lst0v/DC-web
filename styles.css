@@ -1,24 +1,24 @@
 body {
   margin: 0;
+  padding: 0;
   background-color: #fcf8e8;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 a:link,
 a:visited {
   color: #30475e;
-  stroke: blueviolet;
   text-decoration: none;
-  line-height: 1.2rem;
 }
 
 a:hover {
   color: #df7861;
   /* transform: scale(1.2);  */
-  font-size: 1.05rem;
+  /* font-size: 1.05rem; */
 }
 
 a:active {
   color: #b85c38;
-  size: 1.1em;
+  /* size: 1.1em; */
   text-decoration: overline;
 }
 
@@ -26,20 +26,49 @@ a:active {
 
 .menu {
   position: fixed;
+  display: flex;
   margin: 0;
-  height: 50px;
   width: 100%;
-  text-align: center;
+  height: 4em;
+  align-items: center;
+  justify-content: center;
   background-color: #ecb390;
-  color: #b85c38;
-  border: 3px solid red;
+  border-bottom: groove 2px white;
 }
+.menu h1 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+  line-height: 1.1em;
+  font-size: 1em;
+  margin: auto 2em auto 2em;
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+}
+.menu a {
+  text-align: center;
+  justify-content: center;
+}
+
 .dots {
+  position: relative;
   width: 20%;
   border-width: 1rem;
   border-style: dotted none none none;
   border-color: #d4e2d4;
 }
 .body {
-  margin-top: 50px;
+  position: absolute;
+  margin-top: 4em;
+  padding: 1em;
+  border: solid 1px red;
+}
+
+.container {
+  position: relative;
+  width: 5em;
+  height: 5em;
+  background-color: burlywood;
+  margin: 1em;
+  border: solid 1px red;
 }

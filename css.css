@@ -1,0 +1,10 @@
+p {
+  background-color: sandybrown;
+  width: fit-content;
+  display: inline;
+  padding: 0 1em;
+}
+
+a {
+  background-color: green;
+}
