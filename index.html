@@ -14,12 +14,18 @@
 <!-- https://colorhunt.co/palette/4834346b4f4feed6c4fff3e4 -->
 
 <body>
+    <!-- top menu Begin -->
     <div class="menu">
-        <h1><a href="https://dzone.com/articles/top-20-git-commands-with-examples">Most Used<br>Git commands</a></h1>
-        <h1><a href="Terminal.html">Terminal<br>Commands</a></h1>
+        <h1 class="menu__text"><a href="https://dzone.com/articles/top-20-git-commands-with-examples">Most Used<br>Git
+                commands</a></h1>
+        <h1 class="menu__text"><a href="Terminal.html">Most Used <br> Terminal Commands</a></h1>
     </div>
-    <div class="body">
-        <a href="https://dzone.com/articles/top-20-git-commands-with-examples">20 most Used Git commands</a>
+    <!-- top menu End -->
+
+    <!-- content begin -->
+    <div class="content">
+
+        <!-- <a href="https://dzone.com/articles/top-20-git-commands-with-examples">20 most Used Git commands</a>
         <br><a href="https://zepel.io/blog/13-git-commands/#git-push">13 Git Commands Every Developer Must Know </a>
         <br>
         <p>
@@ -27,13 +33,69 @@
             <a href="https://colorhunt.co/palette/2d24245c3d2eb85c38e0c097">Coffee Vivid pallet 1</a><br>
             <a href="https://colorhunt.co/palette/dddddd22283130475ef05454">Dark Color pallet</a><br>
             <a href="https://colorhunt.co/palette/4834346b4f4feed6c4fff3e4 ">Color pallet 2</a><br>
-        </p>
-        <div class="container">1</div>
-        <div class="container">2</div>
-        <div class="container">3</div>
+            <br> -->
+        <!-- info -->
+        <details class="info">
+            <summary>
+                <div class="info__header">
+                    <h2>git config - </h2>
+                    <p> Sets the author name and email address respectively to be used with
+                        your commits.</p>
+                </div>
+            </summary>
+            <div class="info__details">
+                <p>git config –global user.name “[name]”</p>
+                <p>git config –global user.email “[email address]”</p>
+            </div>
+        </details>
 
-        <hr class="dots">
+        <!-- info -->
+        <details class="info">
+            <summary>
+                <div class="info__header">
+                    <h2>git init - </h2>
+                    <p> start a new repository in a current folder</p>
+                </div>
+            </summary>
+            <div class="info__details">
+                Transform the current directory into a Git repository. This adds a .git subdirectory to the current
+                directory and makes it possible to start recording revisions of the project. Deleting .git directory
+                will erase all repository
+            </div>
+        </details>
+
+        <!-- info -->
+        <details class="info">
+            <summary>
+                <div class="info__header">
+                    <h2>git clone - </h2>
+                    <p> clones a repository from a given URL a to a current folder</p>
+                </div>
+            </summary>
+            <div class="info__details">
+                git clone [url]
+            </div>
+        </details>
+
+        <!-- info -->
+        <details class="info">
+            <summary>
+                <div class="info__header">
+                    <h2>git add - </h2>
+                    <p> adds a file to the staging area</p>
+                </div>
+            </summary>
+            <div class="info__details">
+                <p>git add [name of the file] </p>
+                <p>git add * </p>
+                <p>git add . </p>
+            </div>
+        </details>
+
+
+
     </div>
+    <!-- content End -->
 
 </body>
 

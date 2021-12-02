@@ -1,8 +1,12 @@
+.body {
+  display: inline-flex;
+}
 p {
   background-color: sandybrown;
-  width: fit-content;
-  display: inline;
+  /* width: fit-content; */
+  display: flex;
   padding: 0 1em;
+  margin: 2rem;
 }
 
 a {
