@@ -44,8 +44,30 @@
                 </div>
             </summary>
             <div class="info__details">
-                <p>git config –global user.name “[name]”</p>
+                <p>git config –global user.name “[name]” -
+                    <span class="comment"> - or returns its value without "[]"</span>
+                </p>
                 <p>git config –global user.email “[email address]”</p>
+            </div>
+        </details>
+
+        <!-- info -->
+        <details class="info">
+            <summary>
+                <div class="info__header">
+                    <h2>git status - </h2>
+                    <p>Shows the working tree status</p>
+                </div>
+            </summary>
+            <div class="info__details">
+                <p>
+                    git status -s
+                    <span class="comment"> - short version</span>
+                </p>
+                <p>
+                    git status --show-stash
+                    <span class="comment"> - shows the number of entries currently stashed away</span>
+                </p>
             </div>
         </details>
 
@@ -57,7 +79,7 @@
                     <p> start a new repository in a current folder</p>
                 </div>
             </summary>
-            <div class="info__details">
+            <div class="info__details comment">
                 Transform the current directory into a Git repository. This adds a .git subdirectory to the current
                 directory and makes it possible to start recording revisions of the project. Deleting .git directory
                 will erase all repository
@@ -86,11 +108,39 @@
                 </div>
             </summary>
             <div class="info__details">
-                <p>git add [name of the file] </p>
-                <p>git add * </p>
-                <p>git add . </p>
+                <p>git add [name of the file] <span class="comment"> - adds specific file </p>
+                <p>git add . <span class="comment"> - adds all new and modified files and folders</span></p>
             </div>
         </details>
+
+        <!-- info -->
+        <details class="info">
+            <summary>
+                <div class="info__header">
+                    <h2>git add - </h2>
+                    <p> adds a file to the staging area</p>
+                </div>
+            </summary>
+            <div class="info__details">
+                <p>git add [name of the file] <span class="comment"> - adds specific file </p>
+                <p>git add . <span class="comment"> - adds all new and modified files and folders</span></p>
+            </div>
+        </details>
+
+        <!-- info -->
+        <details class="info">
+            <summary>
+                <div class="info__header">
+                    <h2>git add - </h2>
+                    <p> adds a file to the staging area</p>
+                </div>
+            </summary>
+            <div class="info__details">
+                <p>git add [name of the file] <span class="comment"> - adds specific file </p>
+                <p>git add . <span class="comment"> - adds all new and modified files and folders</span></p>
+            </div>
+        </details>
+
 
 
 

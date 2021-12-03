@@ -139,10 +139,12 @@ details > summary::-webkit-details-marker {
   /* cursor: text; */
   width: auto;
   white-space: nowrap;
+  font-weight: 500;
 }
 
 .info__header p {
   margin-left: 0.3rem;
+  font-weight: 300;
 }
 
 .info__details {
@@ -152,7 +154,10 @@ details > summary::-webkit-details-marker {
   border: solid 1px lightgrey;
   background-color: var(--color-bglight);
 }
-
+.comment {
+  font-style: italic;
+  font-weight: 200;
+}
 .info hr {
   margin: 1rem auto;
   border: solid 1px var(--color-main);
