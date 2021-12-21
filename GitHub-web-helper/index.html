@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Assist</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+    <!-- content begin -->
+    <div class="content">
+
+        <!-- info -->
+        <details class="info">
+            <summary>
+                <div class="info__header">
+                    <h2>git config - </h2>
+                    <p> set the author name and email address respectively to be used with
+                        your commits.</p>
+                </div>
+                <hr class="divider">
+            </summary>
+            <div class="info__details">
+                <p>git config –global user.name “[name]”
+                    <span class="comment"> - without "[]" returns its value </span>
+                </p>
+                <p>git config –global user.email “[email address]”</p>
+            </div>
+        </details>
+
+
+        <!-- info -->
+        <details class="info">
+            <summary>
+                <div class="info__header">
+                    <h2>git status - </h2>
+                    <p>show the working tree status</p>
+                </div>
+                <hr class="divider">
+            </summary>
+            <div class="info__details">
+                <p>
+                    git status -s
+                    <span class="comment"> - short version</span>
+                </p>
+                <p>
+                    git status --show-stash
+                    <span class="comment"> - show the number of entries currently stashed away</span>
+                </p>
+            </div>
+        </details>
+
+        <!-- info -->
+        <details class="info">
+            <summary>
+                <div class="info__header">
+                    <h2>git init - </h2>
+                    <p> start a new repository in a current folder</p>
+                </div>
+                <hr class="divider">
+            </summary>
+            <div class="info__details comment">
+                Transform the current directory into a Git repository. This adds a .git subdirectory to the current
+                directory and makes it possible to start recording revisions of the project. Deleting .git directory
+                will erase all repository
+            </div>
+        </details>
+
+        <!-- info -->
+        <details class="info">
+            <summary>
+                <div class="info__header">
+                    <h2>git clone - </h2>
+                    <p> clone a repository from a given URL a to a current folder</p>
+                </div>
+                <hr class="divider">
+            </summary>
+            <div class="info__details">
+                git clone [url]
+            </div>
+        </details>
+
+        <!-- info -->
+        <details class="info">
+            <summary>
+                <div class="info__header">
+                    <h2>git add - </h2>
+                    <p> add a file to the staging area</p>
+                </div>
+                <hr class="divider">
+            </summary>
+            <div class="info__details">
+                <p>git add [name of the file] <span class="comment"> - add specific file</span> </p>
+                <p>git add . <span class="comment"> - add all new and modified files and folders</span></p>
+            </div>
+        </details>
+
+        <!-- info -->
+        <details class="info">
+            <summary>
+                <div class="info__header">
+                    <h2>.gitignore - </h2>
+                    <p> file with the list of files to not track</p>
+                </div>
+                <hr class="divider">
+            </summary>
+            <div class="info__details">
+                <p>touch .gitignore <span class="comment"> - create file </span></p>
+                <p>code .gitignore <span class="comment"> - open file to add a list of not trackable files or
+                        folders</span></p>
+                <p><a href="https://git-scm.com/docs/gitignore">documentation</a> <span class="comment"> - <a
+                            href="https://www.jcchouinard.com/gitignore-template/">template</a></span></p>
+                <p>$ git config --global core.excludesfile ~/.gitignore_global <span class="comment"> - exclude file
+                        ~/.gitignore_global for all Git repositories.
+                    </span></p>
+            </div>
+        </details>
+
+        <!-- info -->
+        <details class="info">
+            <summary>
+                <div class="info__header">
+                    <h2>git commit - </h2>
+                    <p> capture a snapshot of the project's currently staged changes. </p>
+                </div>
+                <hr class="divider">
+            </summary>
+            <div class="info__details">
+                <p>git commit -m "[memo]"<span class="comment"></span></p>
+                <p>git commit -am "[memo]"
+                    <span class="comment">
+                        - add and commit all new and modified files and folders
+                    </span>
+                </p>
+                <p>git commit --amend
+                    <span class="comment">
+                        - modify the most recent commit message ( -m "[memo]") or adds new modified files to
+                        previous
+                        commit
+                    </span>
+                </p>
+            </div>
+        </details>
+
+        <!-- info -->
+        <details class="info">
+            <summary>
+                <div class="info__header">
+                    <h2>git log - </h2>
+                    <p> will show the full list of commits and authors of current branch </p>
+                </div>
+                <hr class="divider">
+            </summary>
+            <div class="info__details">
+                <p>git log --oneline <span class="comment"> - show short version of the list</span> </p>
+            </div>
+        </details>
+
+        <!-- info -->
+        <details class="info">
+            <summary>
+                <div class="info__header">
+                    <h2>git branch - </h2>
+                    <p> show existing branches</p>
+                </div>
+                <hr class="divider">
+            </summary>
+            <div class="info__details">
+                <p>git branch [name] <span class="comment"> - create new branch (but not relocating you there)</span>
+                </p>
+                <p>git branch -d [name] <span class="comment"> - delete named branch if it was merged </span></p>
+                <p>git branch -D [name] <span class="comment"> - delete named branch permanently (need to be on an other
+                        branch) </span></p>
+                <p>git branch -m [name] <span class="comment"> - renames current branch </span></p>
+                <p>git branch -r <span class="comment"> - list of remote branches </span></p>
+
+            </div>
+        </details>
+
+        <!-- info -->
+        <details class="info">
+            <summary>
+                <div class="info__header">
+                    <h2>git switch - </h2>
+                    <p> switch to an other branch </p>
+                </div>
+                <hr class="divider">
+            </summary>
+            <div class="info__details">
+                <p>git switch [name] <span class="comment"> - same as ( </span>git checkout [name] <span
+                        class="comment"> ) - switch
+                        to named branch</span></p>
+                <p>git switch -c [name] <span class="comment"> - create new branch and switch to it</span></p>
+            </div>
+        </details>
+
+        <!-- info -->
+        <details class="info">
+            <summary>
+                <div class="info__header">
+                    <h2>git branch - </h2>
+                    <p> show existing branches</p>
+                </div>
+                <hr class="divider">
+            </summary>
+            <div class="info__details">
+                <p>git branch [name] <span class="comment"> - create new branch (but not relocating you there)</span>
+                </p>
+                <p>git branch -d [name] <span class="comment"> - delete named branch if it was merged </span></p>
+                <p>git branch -D [name] <span class="comment"> - delete named branch permanently (need to be on an other
+                        branch) </span></p>
+                <p>git branch -m [name] <span class="comment"> - renames current branch </span></p>
+                <p>git branch -r <span class="comment"> - list of remote branches </span></p>
+
+            </div>
+        </details>
+
+        <!-- info -->
+        <details class="info">
+            <summary>
+                <div class="info__header">
+                    <h2>git merge - </h2>
+                    <p> merging branches</p>
+                </div>
+                <hr class="divider">
+            </summary>
+            <div class="info__details">
+                <p>git branch [name] <span class="comment"> - merging named branch with current one </span></p>
+            </div>
+        </details>
+
+        <!-- info -->
+        <details class="info">
+            <summary>
+                <div class="info__header">
+                    <h2>git diff - </h2>
+                    <p> shows modifications of not staged files and the latest committed version</p>
+                </div>
+                <hr class="divider">
+            </summary>
+            <div class="info__details">
+                <p>git diff -staged <span class="comment"> - sows differences between the files in the staging area and
+                        the latest committed version</span></p>
+                <p>git diff [hash 1] [hash 2]<span class="comment"> - compares 2 commits ( hash could be viewed
+                        with - </span> git log --oneline <span class="comment">)</span></span> </p>
+                <p>git diff [branch 1] [branch 2] <span class="comment"> - shows differences between 2 branches</span>
+                </p>
+                <p>git diff HEAD [file name] <span class="comment"> - shows changes within specific file</span>
+                </p>
+            </div>
+        </details>
+
+        <!-- info -->
+        <details class="info">
+            <summary>
+                <div class="info__header">
+                    <h2>git merge - </h2>
+                    <p> merging branches</p>
+                </div>
+                <hr class="divider">
+            </summary>
+            <div class="info__details">
+                <p>git merge [name] <span class="comment"> - merging named branch with current one </span></p>
+                <p>git branch -d [name] <span class="comment"> - delete named branch if it was merged </span></p>
+            </div>
+        </details>
+
+        <!-- info -->
+        <details class="info">
+            <summary>
+                <div class="info__header">
+                    <h2>git stash - </h2>
+                    <p> temporarily stores all the modified tracked files</p>
+                </div>
+                <hr class="divider">
+            </summary>
+            <div class="info__details">
+                <p>git stash list <span class="comment"> - print of existing stashes with hash address </span></p>
+                <p>git stash pop <span class="comment"> - apply changes from most resent stash (and deleting it)</span>
+                </p>
+                <p>git stash apply [hash] <span class="comment"> - apply changes from most resent stash or from [hash]
+                        (and still keeping that stash)</span></p>
+                <p>git stash drop [hash]<span class="comment"> - discards the most recently or [hash] stashed
+                        changeset</span></p>
+            </div>
+        </details>
+
+
+    </div>
+    <!-- content End -->
+
+    <!-- menu -->
+    <div class="menu">
+        <h1 class="menu__text"><a href="index.html">Most Used<br>Git commands</a></h1>
+        <!-- <h1 class="menu__text"><a href="Terminal.html">Most Used <br> Terminal Commands</a></h1> -->
+    </div>
+
+</body>
+
+</html>
